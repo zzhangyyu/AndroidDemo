@@ -1,0 +1,109 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Theme. -->
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar"></style>
+
+    <!-- 按钮 -->
+    <style name="btn_common_style">
+        <item name="android:background">@drawable/btn_red_sel</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+    </style>
+
+    <!-- 去掉默认复选框的CheckBox -->
+    <style name="cb_common_style">
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:checked">false</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableLeft">@drawable/rb_type_sel</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <!-- 开关 -->
+    <style name="switch_style">
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:checked">false</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableLeft">@drawable/switvh_sel</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <!-- 输入框 -->
+    <style name="et_common_style">
+        <item name="android:background">@drawable/et_bg_sha</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:textColorHint">@color/hint_font</item>
+        <item name="android:ellipsize">start</item>
+    </style>
+
+    <!-- 两行文字的checkbox -->
+    <style name="cb_mul_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/cb_mul_sel</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingTop">10dip</item>
+    </style>
+
+    <!-- ListView -->
+    <style name="listview_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:divider">@color/gray</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:overScrollFooter">@null</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:fastScrollEnabled">false</item>
+    </style>
+
+    <!-- 竖线 -->
+    <style name="vertical_line_style">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- 横线 -->
+    <style name="horizontal_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+
+    <!-- 首页tab -->
+    <style name="tab_bottom_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/rb_bg_sel</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@drawable/rb_text_sel</item>
+        <item name="android:drawablePadding">2dip</item>
+    </style>
+
+</resources>

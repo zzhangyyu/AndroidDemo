@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/white">
+
+        <com.cslc.demo.view.PagerSlidingTabStrip
+            android:id="@+id/tab_strip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/arrow_iv"
+            android:background="@color/white"
+            app:pstsCurrentTextColor="#EB6100"
+            app:pstsIndicatorColor="#EB6100"
+            app:pstsIndicatorHeight="2dip"
+            app:pstsTabPaddingLeftRight="10dip"
+            app:pstsTextColor="#999999"
+            app:pstsTextSize="16sp"
+            app:pstsUnderlineColor="#999999"
+            app:pstsUnderlineHeight="0.0dip" />
+
+        <ImageView
+            android:id="@+id/arrow_iv"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_down" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="@color/gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

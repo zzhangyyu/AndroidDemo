@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/shadow_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:shadowColor="@color/yellow"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="2.0"
+        android:text="这里显示阴影效果"
+        android:textSize="@dimen/text_large" />
+
+    <TextView
+        android:id="@+id/icon_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/ic_launcher"
+        android:gravity="center"
+        android:text="带图片的textView"
+        android:textSize="@dimen/text_large" />
+
+    <TextView
+        android:id="@+id/link_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:autoLink="all"
+        android:gravity="center"
+        android:text="www.baidu.com"
+        android:textSize="@dimen/text_large" />
+
+    <TextView
+        android:id="@+id/spannable_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="红色打电话斜体删除线绿色下划线图片："
+        android:textSize="@dimen/text_large" />
+
+    <TextView
+        android:id="@+id/diff_click_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_large" />
+
+    <TextView
+        android:id="@+id/roll_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="这里显示滚动...滚动...滚动...滚动...滚动...滚动...滚动...滚动...滚动...滚动...滚动...滚动...效果"
+        android:textSize="@dimen/text_large" />
+
+    <TextView
+        android:id="@+id/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+        android:text="为显示行间距，写了很长很长很长很长很长很长很长很长很长很长很长很长很长很长一段话"
+        android:textSize="@dimen/text_large" />
+
+</LinearLayout>

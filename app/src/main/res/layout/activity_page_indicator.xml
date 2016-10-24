@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fragment_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <RadioGroup
+        android:id="@+id/tab_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/first_rb"
+            style="@style/tab_bottom_style"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/tab1_sel"
+            android:text="第一页" />
+
+        <RadioButton
+            android:id="@+id/second_rb"
+            style="@style/tab_bottom_style"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/tab2_sel"
+            android:text="第二页" />
+
+        <RadioButton
+            android:id="@+id/third_rb"
+            style="@style/tab_bottom_style"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/tab3_sel"
+            android:text="第三页" />
+    </RadioGroup>
+
+</LinearLayout>

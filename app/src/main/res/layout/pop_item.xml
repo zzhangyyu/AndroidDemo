@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/btn_common_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮一" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_2"
+            style="@style/btn_common_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮二" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_3"
+            style="@style/btn_common_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮三" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_11"
+            style="@style/btn_common_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮四" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_12"
+            style="@style/btn_common_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮五" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_13"
+            style="@style/btn_common_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮六" />
+    </LinearLayout>
+
+</LinearLayout>
