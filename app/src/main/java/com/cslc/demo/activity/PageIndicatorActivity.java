@@ -29,6 +29,7 @@ public class PageIndicatorActivity extends BaseActivity implements OnCheckedChan
 		firstRb.setOnCheckedChangeListener(this);
 		secondRb.setOnCheckedChangeListener(this);
 		thirdRb.setOnCheckedChangeListener(this);
+		firstRb.setChecked(true);
 	}
 
 	@Override

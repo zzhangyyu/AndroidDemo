@@ -14,12 +14,15 @@ import com.cslc.demo.util.ActivityUtil;
 public class RecyclerViewActivity extends BaseActivity implements View.OnClickListener {
 
     private Button rvLv1Btn;
+    private Button rvLv2Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         rvLv1Btn = (Button) findViewById(R.id.rv_lv1_btn);
+        rvLv2Btn = (Button) findViewById(R.id.rv_lv2_btn);
         rvLv1Btn.setOnClickListener(this);
+        rvLv2Btn.setOnClickListener(this);
     }
 
 
@@ -34,5 +37,8 @@ public class RecyclerViewActivity extends BaseActivity implements View.OnClickLi
             ActivityUtil.startActivity(mActivity, RvLv1Activity.class);
         }
 
+        if (v.getId() == rvLv2Btn.getId()) {
+            ActivityUtil.startActivity(mActivity, RvLv2Activity.class);
+        }
     }
 }

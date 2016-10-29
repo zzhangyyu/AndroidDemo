@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="23" />
+        android:targetSdkVersion="25" />
 
     <!-- 权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -85,7 +85,10 @@
             android:name=".activity.RecyclerViewActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".activity.RvLv1Activity"
+        android:name=".activity.RvLv1Activity"
+        android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.RvLv2Activity"
             android:screenOrientation="portrait"></activity>
     </application>
 
