@@ -2,14 +2,18 @@ package com.cslc.demo.activity;
 
 import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cslc.demo.R;
+import com.cslc.demo.adapter.RvSimpleAdapter;
+import com.cslc.demo.util.ToastUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +34,7 @@ public class RvLv1Activity extends BaseActivity {
         initData();
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        MyAdapter mAdapter = new MyAdapter();
+        RvSimpleAdapter mAdapter = new RvSimpleAdapter(mActivity, mDatas);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
     }
@@ -47,35 +51,5 @@ public class RvLv1Activity extends BaseActivity {
             mDatas.add("" + (char) i);
         }
     }
-
-
-    class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
-
-        @Override
-        public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            MyViewHolder myViewHolder = new MyViewHolder(LayoutInflater.from(mActivity).inflate(R.layout.item_recyclerview, parent, false));
-            return myViewHolder;
-        }
-
-        @Override
-        public void onBindViewHolder(MyViewHolder holder, int position) {
-            holder.tv.setText(mDatas.get(position));
-        }
-
-        @Override
-        public int getItemCount() {
-            return mDatas.size();
-        }
-
-        class MyViewHolder extends RecyclerView.ViewHolder {
-            TextView tv;
-
-            public MyViewHolder(View itemView) {
-                super(itemView);
-                tv = (TextView) itemView.findViewById(R.id.rv_item);
-            }
-        }
-    }
-
 
 }

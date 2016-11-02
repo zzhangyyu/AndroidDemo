@@ -3,6 +3,7 @@ package com.cslc.demo.activity;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -56,6 +57,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
         demoDatas.add(new Demo("ImageLoad", "Listview异步加载图片"));
         demoDatas.add(new Demo("SlideTopTab", "顶部导航栏"));
         demoDatas.add(new Demo("RecyclerView", "RecyclerView使用练习"));
+        demoDatas.add(new Demo("Dialog", "Dialog使用练习"));
         myAdapter.setDemoDatas(demoDatas);
     }
 
@@ -165,6 +167,9 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
         }
         if ("RecyclerView".equals(demoTitle)) {
             ActivityUtil.startActivity(mActivity, RecyclerViewActivity.class);
+        }
+        if ("Dialog".equals(demoTitle)) {
+            ActivityUtil.startActivity(mActivity, DialogActivity.class);
         }
     }
 

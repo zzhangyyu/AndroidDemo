@@ -90,6 +90,15 @@
         <activity
             android:name=".activity.RvLv2Activity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.RvLv3Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.RvLv4Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.DialogActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
