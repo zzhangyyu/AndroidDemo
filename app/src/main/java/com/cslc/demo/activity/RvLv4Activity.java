@@ -1,12 +1,13 @@
 package com.cslc.demo.activity;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import com.cslc.demo.R;
 import com.cslc.demo.adapter.RvSimpleAdapter;
-import com.cslc.demo.common.DividerItemDecoration;
+import com.cslc.demo.adapter.RvWaterfallAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
  * Created by zhangyu on 2016/10/19.
  */
 
-public class RvLv1Activity extends BaseActivity {
+public class RvLv4Activity extends BaseActivity {
 
     private RecyclerView mRecyclerView;
     private List<String> mDatas;
@@ -26,10 +27,9 @@ public class RvLv1Activity extends BaseActivity {
         super.onCreate(savedInstanceState);
         initData();
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        RvSimpleAdapter mAdapter = new RvSimpleAdapter(mActivity, mDatas);
+        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
+        RvWaterfallAdapter mAdapter = new RvWaterfallAdapter(mActivity, mDatas);
         mRecyclerView.setAdapter(mAdapter);
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
     }
 
     @Override
@@ -44,5 +44,5 @@ public class RvLv1Activity extends BaseActivity {
             mDatas.add("" + (char) i);
         }
     }
-
 }
+

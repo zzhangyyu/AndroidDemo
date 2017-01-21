@@ -25,7 +25,7 @@
 
 
     <application
-        android:name="com.cslc.demo.App"
+        android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
         android:icon="@drawable/app_logo"
         android:label="@string/app_name"
@@ -85,8 +85,8 @@
             android:name=".activity.RecyclerViewActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-        android:name=".activity.RvLv1Activity"
-        android:screenOrientation="portrait"></activity>
+            android:name=".activity.RvLv1Activity"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.RvLv2Activity"
             android:screenOrientation="portrait"></activity>
@@ -98,6 +98,9 @@
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.DialogActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.LitePalActivity"
             android:screenOrientation="portrait"></activity>
     </application>
 
