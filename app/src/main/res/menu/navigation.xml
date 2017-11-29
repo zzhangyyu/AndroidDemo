@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/first_tab"
+        android:icon="@drawable/tab1_normal"
+        android:title="日期" />
+
+    <item
+        android:id="@+id/second_rb"
+        android:icon="@drawable/tab2_normal"
+        android:title="病人" />
+
+    <item
+        android:id="@+id/third_tab"
+        android:icon="@drawable/tab3_normal"
+        android:title="医生" />
+</menu>

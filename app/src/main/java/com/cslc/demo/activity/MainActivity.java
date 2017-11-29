@@ -59,6 +59,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
         demoDatas.add(new Demo("RecyclerView", "RecyclerView使用练习"));
         demoDatas.add(new Demo("Dialog", "Dialog使用练习"));
         demoDatas.add(new Demo("LitePal", "使用LitePal操作数据库"));
+        demoDatas.add(new Demo("官方导航栏", "使用LitePal操作数据库"));
         myAdapter.setDemoDatas(demoDatas);
     }
 
@@ -174,6 +175,9 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
         }
         if ("LitePal".equals(demoTitle)) {
             ActivityUtil.startActivity(mActivity, LitePalActivity.class);
+        }
+        if ("官方导航栏".equals(demoTitle)) {
+            ActivityUtil.startActivity(mActivity, PageIndicatorActivity2.class);
         }
     }
 

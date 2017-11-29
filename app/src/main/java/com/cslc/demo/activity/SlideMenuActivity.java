@@ -16,7 +16,7 @@ import com.cslc.demo.fragment.SecondPageFragment;
 import com.cslc.demo.fragment.ThirdPageFragment;
 
 /**
- * 可滑动的导航菜单
+ * 基于ViewPager和Fragment实现可以滑动的底部导航栏
  *
  * @author zhangyu
  */

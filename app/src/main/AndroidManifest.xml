@@ -102,6 +102,9 @@
         <activity
             android:name=".activity.LitePalActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.PageIndicatorActivity2"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
